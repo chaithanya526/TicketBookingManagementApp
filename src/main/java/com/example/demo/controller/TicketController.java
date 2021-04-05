@@ -13,13 +13,13 @@ import com.example.demo.entities.Ticket;
 import com.example.demo.service.TicketBookingService;
 
 @RestController
-@RequestMapping(value="/ticket")
+
 public class TicketController {
 	
 	@Autowired
 	public TicketBookingService ticketBookingService;
 	
-	@GetMapping(value="/create")
+	@GetMapping(value="/")
 	public Ticket TicketCreation()
 	{
 		//return "welcome to controller";
